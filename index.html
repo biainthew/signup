@@ -73,15 +73,16 @@
         //         console.log(window.innerHeight() - input.height)
         //     })
         // });
-        // window.addEventListener('resize', function(){
-        //     let initialViewportHeight = window.innerHeight;
-        //     const currentViewportHeight = window.innerHeight;
-        //
-        //     if(initialViewportHeight>currentViewportHeight) {
-        //         const keyboardHeight = initialViewportHeight - currentViewportHeight;
-        //         nextButton.style.bottom = `${keyboardHeight}px`
-        //     }
-        // })
+        window.addEventListener('resize', function(){
+            let initialViewportHeight = window.innerHeight;
+            const currentViewportHeight = window.innerHeight;
+            const nextButton = document.querySelector('.btn-main');
+
+            if(initialViewportHeight>currentViewportHeight) {
+                const keyboardHeight = initialViewportHeight - currentViewportHeight;
+                nextButton.style.bottom = `${keyboardHeight}px`
+            }
+        })
     </script>
 </body>
 </html>
