@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 36px;
+        }
+        input {
+            display: block;
+            width: 100%;
+        }
+        .input2,.input3, .input4 {
+            position: absolute;
+            top: 100%;
+            transition: .5s;
+        }
+        .btn-main {
+            background: green;
+            padding: 8px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<input class="input1" type="text">
+<input class="input input2" type="text">
+<input class="input input3" type="text">
+<input class="input input4" type="text">
+
+<!--이름-->
+<input type="text">
+<!--생년월일-->
+<input type="number" inputmode="numeric">
+<!--휴대폰번호-->
+<input type="number" inputmode="numeric">
+<button class="btn-main">확인</button>
+
+
+
+    <script defer>
+        // let inputHeight = $('.input').outerHeight();
+        //
+        // $('.input1').click(function() {
+        //     $('.input2').css('top', inputHeight + 'px');
+        // });
+        // $('.input2').click(function() {
+        //     $('.input3').css('top', inputHeight*2 + 'px');
+        // });
+        // $('.input3').click(function() {
+        //     $('.input4').css('top', inputHeight*3 + 'px');
+        // });
+    </script>
+</body>
+</html>
