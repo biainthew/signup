@@ -33,7 +33,7 @@
         .btn-main {
             background: green;
             padding: 8px 0;
-            width: 100%;
+            width: 300px;
             position: fixed;
             bottom: 0;
         }
@@ -73,11 +73,11 @@
         //         console.log(window.innerHeight() - input.height)
         //     })
         // });
+        let initialViewportHeight = window.innerHeight;
         window.addEventListener('resize', function(){
-            let initialViewportHeight = window.innerHeight;
             const currentViewportHeight = window.innerHeight;
             const nextButton = document.querySelector('.btn-main');
-
+            console.log(currentViewportHeight , initialViewportHeight)
             if(initialViewportHeight>currentViewportHeight) {
                 const keyboardHeight = initialViewportHeight - currentViewportHeight;
                 nextButton.style.bottom = `${keyboardHeight}px`
