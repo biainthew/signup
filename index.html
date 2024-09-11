@@ -34,7 +34,7 @@
             background: green;
             padding: 8px 0;
             width: 100%;
-            position: absolute;
+            position: fixed;
             bottom: 0;
         }
     </style>
@@ -67,6 +67,21 @@
         // $('.input3').click(function() {
         //     $('.input4').css('top', inputHeight*3 + 'px');
         // });
+        let input = document.querySelectorAll('input');
+        // input.forEach(el => {
+        //     el.addEventListener('resize', function(){
+        //         console.log(window.innerHeight() - input.height)
+        //     })
+        // });
+        // window.addEventListener('resize', function(){
+        //     let initialViewportHeight = window.innerHeight;
+        //     const currentViewportHeight = window.innerHeight;
+        //
+        //     if(initialViewportHeight>currentViewportHeight) {
+        //         const keyboardHeight = initialViewportHeight - currentViewportHeight;
+        //         nextButton.style.bottom = `${keyboardHeight}px`
+        //     }
+        // })
     </script>
 </body>
 </html>
